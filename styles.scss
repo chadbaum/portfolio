@@ -9,27 +9,33 @@ body {
   a:hover {
     color: lavender;
   }
-}
-
-.nav-banner {
-  background-color: darkslategray;
-  height: 100px;
-  nav {
-    padding-top:35px;
-    text-align: center;
-    ul {
-      list-style: none;
-      padding: 0px;
-    }
-    li {
-        display: inline;
-        margin: 25px;
-        font-size: 30px;
-    }
+  ul {
+    list-style: none;
+    padding: 0px;
   }
 }
 
-.hero-banner {
+#name {
+  display: none;
+}
+
+#tagline {
+  display: none;
+}
+
+nav {
+  background-color: darkslategray;
+  height: 60px;
+  padding-top:15px;
+  text-align: center;
+  li {
+    display: inline;
+    margin: 25px;
+    font-size: 30px;
+  }
+}
+
+.hero {
   background-color: turquoise;
   height: 500px;
   text-align: center;
@@ -48,14 +54,15 @@ body {
   }
 }
 
-.white-banner {
+.technical-overview {
   height: 400px;
+  color: darkslategrey;
+  text-align: center;
+  li {
+    display: inline;
+  }
 }
 
-#name {
-  display: none;
-}
+.techncial-details {
 
-#tagline {
-  display: none;
 }

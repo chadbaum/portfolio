@@ -13,51 +13,9 @@ body a:hover {
   color: lavender;
 }
 
-.nav-banner {
-  background-color: darkslategray;
-  height: 100px;
-}
-
-.nav-banner nav {
-  padding-top: 35px;
-  text-align: center;
-}
-
-.nav-banner nav ul {
+body ul {
   list-style: none;
   padding: 0px;
-}
-
-.nav-banner nav li {
-  display: inline;
-  margin: 25px;
-  font-size: 30px;
-}
-
-.hero-banner {
-  background-color: turquoise;
-  height: 500px;
-  text-align: center;
-}
-
-.hero-banner img {
-  padding-top: 40px;
-}
-
-.hero-banner h1 {
-  font-size: 85px;
-  margin: 0;
-  position: relative;
-  top: 30px;
-}
-
-.hero-banner h2 {
-  position: relative;
-  top: 25px;
-}
-
-.white-banner {
-  height: 400px;
 }
 
 #name {
@@ -66,4 +24,49 @@ body a:hover {
 
 #tagline {
   display: none;
+}
+
+nav {
+  background-color: darkslategray;
+  height: 60px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 25px;
+  font-size: 30px;
+}
+
+.hero {
+  background-color: turquoise;
+  height: 500px;
+  text-align: center;
+}
+
+.hero img {
+  padding-top: 40px;
+}
+
+.hero h1 {
+  font-size: 85px;
+  margin: 0;
+  position: relative;
+  top: 30px;
+}
+
+.hero h2 {
+  position: relative;
+  top: 25px;
+}
+
+.technical-overview {
+  height: 400px;
+  color: darkslategrey;
+  text-align: center;
+}
+
+.technical-overview li {
+  display: inline;
 }
