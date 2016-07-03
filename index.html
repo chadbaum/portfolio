@@ -1,74 +1,85 @@
 <html>
   <head>
     <title>Chad Baum</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script crossorigin="anonymous" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="aboutme.html">About Me</a>
-        </li>
-        <li>
-          <a href="portfolio.html">Portfolio </a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <img src="profile.png" />
-      <h1 id="name">
-        Chad Baum
-      </h1>
-      <h2 id="tagline">
-        Coder / Developer / Gamer
-      </h2>
+    <div class="container-fluid">
+      <div class="col-xs-12 text-center" id="navbar">
+        <ul>
+          <li>
+            <a href="aboutme.html">About Me</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio </a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 text-center" id="hero">
+        <img src="profile.png" />
+        <h1 id="name">
+          Chad Baum
+        </h1>
+        <h2 id="tagline">
+          Software Developer
+        </h2>
+      </div>
+      <div class="col-xs-12 text-center" id="technical-overview">
+        <h1>
+          Technical Skills
+        </h1>
+        <h2>
+          Front-end
+        </h2>
+        <ul>
+          <li>
+            HTML5
+          </li>
+          &middot;
+          <li>
+            CSS3
+          </li>
+          &middot;
+          <li>
+            Javascript
+          </li>
+        </ul>
+        <h2>
+          Back-end
+        </h2>
+        <ul>
+          <li>
+            Ruby
+          </li>
+          &middot;
+          <li>
+            Ruby on Rails
+          </li>
+          &middot;
+          <li>
+            PostgreSQL
+          </li>
+          &middot;
+          <li>
+            TDD
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 text-center" id="portfolio">
+        <h1>
+          Portfolio
+        </h1>
+        <div class="col-xs-10 col-xs-offset-1 text-center" id="portfolio-grid">
+          <a class="portfolio-box col-xs-12 col-md-4">Splurty</a><a class="portfolio-box col-xs-12 col-md-4">Nomster</a><a class="portfolio-box col-xs-12 col-md-4">Flixter</a><a class="portfolio-box col-xs-12 col-md-4">Battler</a><a class="portfolio-box col-xs-12 col-md-4">Grammable</a>
+        </div>
+      </div>
     </div>
-    <div class="technical-overview">
-      <h1>
-        Technical Skills
-      </h1>
-      <h2>
-        Front-end
-      </h2>
-      <ul>
-        <li>
-          HTML5
-        </li>
-        &middot;
-        <li>
-          CSS3
-        </li>
-        &middot;
-        <li>
-          Javascript
-        </li>
-      </ul>
-      <h2>
-        Back-end
-      </h2>
-      <ul>
-        <li>
-          Ruby
-        </li>
-        &middot;
-        <li>
-          Ruby on Rails
-        </li>
-        &middot;
-        <li>
-          PostgreSQL
-        </li>
-        &middot;
-        <li>
-          TDD
-        </li>
-      </ul>
-    </div>
-    <div class="technical-details"></div>
     <script src="/assets/javascript/animateName.js"></script>
   </body>
 </html>

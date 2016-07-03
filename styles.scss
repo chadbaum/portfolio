@@ -1,18 +1,19 @@
+$primary-color: turquoise;
+$secondary-color: white;
+$tertiary-color: darkslategray;
+
 body {
   margin: 0;
   font-family: helvetica;
   color: white;
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  a:hover {
-    color: lavender;
-  }
   ul {
     list-style: none;
     padding: 0px;
   }
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 #name {
@@ -23,11 +24,10 @@ body {
   display: none;
 }
 
-nav {
-  background-color: darkslategray;
+#navbar {
+  background-color: $tertiary-color;
   height: 60px;
   padding-top:15px;
-  text-align: center;
   li {
     display: inline;
     margin: 25px;
@@ -35,10 +35,17 @@ nav {
   }
 }
 
-.hero {
-  background-color: turquoise;
+#navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+#navbar a:hover {
+  color: lavender;
+}
+
+#hero {
+  background-color: $primary-color;
   height: 500px;
-  text-align: center;
   img {
     padding-top: 40px;
   }
@@ -54,15 +61,34 @@ nav {
   }
 }
 
-.technical-overview {
+#technical-overview {
   height: 400px;
-  color: darkslategrey;
-  text-align: center;
+  color: $tertiary-color;
+  ul {
+    font-size: 35px;
+  }
   li {
+    font-size: 35px;
     display: inline;
   }
 }
 
-.techncial-details {
+#portfolio {
+  background-color: $primary-color;
+  height: 600px;
+  a:hover {
+    border: 4px solid red;
+    text-decoration: none;
+  }
+  .portfolio-box {
+    background-color: white;
+    color: $primary-color;
+    height: 200px;
+    width: 200px;
+    float: left;
+    border: 1px solid red;
+    padding-top: 85px;
+    margin: 15px;
 
+  }
 }

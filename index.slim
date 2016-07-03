@@ -1,40 +1,52 @@
 html
   head
     title="Chad Baum"
-    link [href="styles.css" rel="stylesheet" type="text/css"]
-    script [src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"]
+    link [rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"]
+    link [rel="stylesheet" href="styles.css"]
+    script [src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"]  
+    script [src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"]  
   body
-    nav
-      ul
-        li
-          a [href="aboutme.html"] About Me
-        li
-          a [href="portfolio.html"] Portfolio 
-        li
-          a [href="contact.html"] Contact
-    .hero
-      img [src="profile.png"]
-      h1 [id='name'] Chad Baum
-      h2 [id='tagline'] Coder / Developer / Gamer
-    .technical-overview
-      h1 Technical Skills
-      h2 Front-end
-      ul
-        li HTML5
-        | &middot;
-        li CSS3
-        | &middot;
-        li Javascript
-      h2 Back-end
-      ul
-        li Ruby
-        | &middot;
-        li Ruby on Rails
-        | &middot;
-        li PostgreSQL
-        | &middot;
-        li TDD
-    .technical-details
-        
-    script [src="/assets/javascript/animateName.js"]
+    .container-fluid
+      #navbar.col-xs-12.text-center
+        ul
+          li
+            a [href="aboutme.html"] About Me
+          li
+            a [href="portfolio.html"] Portfolio 
+          li
+            a [href="contact.html"] Contact
+      #hero.col-xs-12.text-center
+        img [src="profile.png"]
+        h1#name Chad Baum
+        h2#tagline Software Developer
+      #technical-overview.col-xs-12.text-center
+        h1 Technical Skills
+        h2 Front-end
+        ul
+          li HTML5
+          | &middot;
+          li CSS3
+          | &middot;
+          li Javascript
+        h2 Back-end
+        ul
+          li Ruby
+          | &middot;
+          li Ruby on Rails
+          | &middot;
+          li PostgreSQL
+          | &middot;
+          li TDD
+      #portfolio.col-xs-12.text-center
+        h1 Portfolio
+        #portfolio-grid.col-xs-10.col-xs-offset-1.text-center
+          a.portfolio-box.col-xs-12.col-md-4 Splurty
+          a.portfolio-box.col-xs-12.col-md-4 Nomster
+          a.portfolio-box.col-xs-12.col-md-4 Flixter
+          a.portfolio-box.col-xs-12.col-md-4 Battler
+          a.portfolio-box.col-xs-12.col-md-4 Grammable
+    
+    script [src="/assets/javascript/animateName.js"]    
+
+    
       

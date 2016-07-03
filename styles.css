@@ -4,18 +4,13 @@ body {
   color: white;
 }
 
-body a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body a:hover {
-  color: lavender;
-}
-
 body ul {
   list-style: none;
   padding: 0px;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 #name {
@@ -26,47 +21,79 @@ body ul {
   display: none;
 }
 
-nav {
+#navbar {
   background-color: darkslategray;
   height: 60px;
   padding-top: 15px;
-  text-align: center;
 }
 
-nav li {
+#navbar li {
   display: inline;
   margin: 25px;
   font-size: 30px;
 }
 
-.hero {
-  background-color: turquoise;
-  height: 500px;
-  text-align: center;
+#navbar a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.hero img {
+#navbar a:hover {
+  color: lavender;
+}
+
+#hero {
+  background-color: turquoise;
+  height: 500px;
+}
+
+#hero img {
   padding-top: 40px;
 }
 
-.hero h1 {
+#hero h1 {
   font-size: 85px;
   margin: 0;
   position: relative;
   top: 30px;
 }
 
-.hero h2 {
+#hero h2 {
   position: relative;
   top: 25px;
 }
 
-.technical-overview {
+#technical-overview {
   height: 400px;
-  color: darkslategrey;
-  text-align: center;
+  color: darkslategray;
 }
 
-.technical-overview li {
+#technical-overview ul {
+  font-size: 35px;
+}
+
+#technical-overview li {
+  font-size: 35px;
   display: inline;
+}
+
+#portfolio {
+  background-color: turquoise;
+  height: 600px;
+}
+
+#portfolio a:hover {
+  border: 4px solid red;
+  text-decoration: none;
+}
+
+#portfolio .portfolio-box {
+  background-color: white;
+  color: turquoise;
+  height: 200px;
+  width: 200px;
+  float: left;
+  border: 1px solid red;
+  padding-top: 85px;
+  margin: 15px;
 }
